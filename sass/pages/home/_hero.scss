@@ -1,0 +1,137 @@
+.hero {
+    padding-top: 120px;
+    padding-bottom: 20px;
+
+    &__container {
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    }
+
+    &__text {
+        margin-bottom: 7px;
+        color: #3d3d3d;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+    }
+
+    &__title {
+        max-width: 530px;
+        margin-bottom: 5px; 
+        color: #3d3d3d;
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 70px;
+
+        span {
+            color: #46A358;
+        }
+    }
+
+    &__desc {
+        max-width: 557px;
+        margin-bottom: 44px;
+        color: #727272;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__btn {
+        border: 1px solid #46A358;
+        background-color: #46A358;
+        border-radius: 6px;
+        padding: 10px 26px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    &__right {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 1222px) {
+    .hero {
+         &__title {
+            font-size: 60px;
+         }
+    }
+}
+
+@media (max-width: 1130px) {
+    .hero {
+        &__title {
+            font-size: 50px;
+        }
+
+        &__desc {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+    }
+}
+
+@media (max-width: 1047px) {
+    .hero {
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        &__container {
+            gap: 40px;
+        }
+
+        &__right,
+        &__left {
+            width: 50%;
+        }
+
+    }
+}
+
+
+@media (max-width: 900px) {
+    .hero {
+        &__title {
+            font-size: 35px;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .hero {
+        &__container {
+            flex-direction: column-reverse;
+        }
+
+        &__right,
+        &__left {
+            width: 80%;
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text,
+        &__title,
+        &__desc {
+            text-align: center;
+        }
+    }
+}

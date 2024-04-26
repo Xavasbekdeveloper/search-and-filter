@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="../css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="container header__container">
+                <div>
+                    <a href="../index.html">
+                        <img src="../images/logo.svg" alt="img">
+                    </a>
+                </div>
+                <ul class="header__list">
+                    <li class="header__cancel-btn">
+                        <button class="cancel-btn">
+                            <img src="../images/x.svg" alt="img">
+                        </button>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Shop</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Plant Care</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Blogs</a>
+                    </li>
+                    <li class="header__show-btns">
+                        <button class="header__korzina-btn">
+                            <img src="../images/korzina.svg" alt="img">
+                        </button>
+                        <button class="header__login-btns">
+                            <img src="./images/Logout.svg" alt="img">
+                            Login
+                        </button>
+                    </li>
+                </ul>
+                <div class="header__btns">
+                    <input class="header__search-input" type="search" placeholder="Search product">
+                    <div class="header__hide-btns">
+                        <button class="header__korzina-btn">
+                            <img src="../images/korzina.svg" alt="img">
+                        </button>
+                        <button class="header__login-btn log-out">
+                            <img src="../images/Logout.svg" alt="img">
+                            Log out
+                        </button>
+                    </div>
+                    <button class="header__hamburger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="account">
+            <h2 class="title">My accounts</h2>
+            <form class="container admin__form" action="">
+                <div class="form__item">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="first name">
+                </div>
+                <div class="form__item">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" placeholder="last name">
+                </div>
+                <div class="form__item">
+                    <label for="email">email</label>
+                    <input type="text" id="email" placeholder="eamil">
+                </div>
+
+                <div class="form__item">
+                    <label for="phone">phone</label>
+                    <input type="text" id="phone" placeholder="phone number">
+                </div>
+                <div class="form__item">
+                    <label for="password">password</label>
+                    <input type="text" id="password" placeholder="password">
+                </div>
+                <div class="form__item">
+                    <label for="password">confirm password</label>
+                    <input type="text" id="password" placeholder="confirm password">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>

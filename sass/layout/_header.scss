@@ -1,0 +1,211 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: #fff;
+
+    &__container {
+        padding-top: 25px;
+        padding-bottom: 17px;
+        border-bottom: 0.3px solid #46A35880;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__cancel-btn {
+        display: none;
+
+        button {
+            border: none;
+            background-color: transparent;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    &__link {
+        color: #3d3d3d;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.11px;
+        padding: 6px 12px;
+        position: relative;
+        transition: 0.4s ease;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: #46A358;
+            transition: 0.4s ease;
+        }
+        
+        &:hover {
+            color: #fff;
+            transition-delay: 0.4s;
+        }
+        
+        &:hover::before {
+            width: 100%;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0;
+            width: 100%;
+            background-color: #46A358;
+            transition: 0.4s ease;
+            z-index: -1;
+        }
+    
+        &:hover::after {
+            height: 100%;
+            transition-delay: 0.4s;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__search-input {
+        outline: none;
+        border: 1px solid #46A358;
+        padding: 6px 8px;
+        border-radius: 6px;
+        background: url(../../images/search.svg) no-repeat;
+        background-size: 15px 15px;
+        background-position: 165px;
+    }
+
+    &__hide-btns {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__korzina-btn {
+        border: none;
+        background-color: transparent;
+    }
+
+    &__login-btn,
+    &__login-btns {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 8px 17px;
+        border: 1px solid #46A358;
+        border-radius: 6px;
+        background-color: #46A358;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.11px;
+    }
+
+    &__hamburger-btn {
+        border: none;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        display: none;
+
+        span {
+            width: 25px;
+            height: 3px;
+            background-color: #46A358;
+            border-radius: 6px;
+        }
+
+    }
+
+    &__show-btns {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 966px) {
+    .header {
+
+        &__list {
+            gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 1020px) {
+    .header {
+        &__container {
+            justify-content: none;
+        }
+        
+        &__hamburger-btn {
+            display: flex;
+        }
+
+        &__list {
+           background-color: #fff;
+           position: fixed;
+           flex-direction: column;
+           top: 0;
+           left: -100%;
+           width: 50%;
+           height: 100%;
+           box-shadow: 0 0 2px 0.5px gray;
+           padding-top: 50px;
+           gap: 50px; 
+           transition: all .4s ease-in-out;
+        }
+        
+            &__cancel-btn {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+    }
+}
+
+.show-list {
+    left: 0;
+}
+
+
+@media (max-width: 700px) {
+    .header {
+        &__show-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        &__hide-btns {
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenshop</title>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <style>
+        .swiper-slide {
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 88%;
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav>
+            <div class="container header__container">
+                <div>
+                    <a href="#">
+                        <img src="./images/logo.svg" alt="img">
+                    </a>
+                </div>
+                <ul class="header__list">
+                    <li class="header__cancel-btn">
+                        <button class="cancel-btn">
+                            <img src="./images/x.svg" alt="img">
+                        </button>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Shop</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Plant Care</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Blogs</a>
+                    </li>
+                    <li class="header__show-btns">
+                        <button class="header__korzina-btn">
+                            <img src="./images/korzina.svg" alt="img">
+                        </button>
+                        <button class="header__login-btns">
+                            <img src="./images/Logout.svg" alt="img">
+                            Login
+                        </button>
+                    </li>
+                </ul>
+                <div class="header__btns">
+                    <input class="header__search-input" type="text" placeholder="Search product">
+                    <div class="header__hide-btns">
+                        <button class="header__korzina-btn">
+                            <img src="./images/korzina.svg" alt="img">
+                        </button>
+                        <button class="header__login-btn">
+                            <img src="./images/Logout.svg" alt="img">
+                            Login
+                        </button>
+                    </div>
+                    <button class="header__hamburger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper container">
+                    <div class="swiper-slide">
+                        <div class="hero__left">
+                            <p class="hero__text"> Welcome to GreenShop</p>
+                            <h1 class="hero__title">Let’s Make a Better <span>Planet</span></h1>
+                            <p class="hero__desc">We are an online plant shop offering a wide range of cheap and trendy
+                                plants.
+                                Use our plants to create an unique Urban
+                                Jungle. Order your favorite plants!</p>
+                            <button class="hero__btn">SHOP NOW</button>
+                        </div>
+                        <div class="hero__right">
+                            <img src="./images/hero.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero__left">
+                            <p class="hero__text"> Welcome to GreenShop</p>
+                            <h1 class="hero__title">Let’s Make a Better <span>Planet</span></h1>
+                            <p class="hero__desc">We are an online plant shop offering a wide range of cheap and trendy
+                                plants.
+                                Use our plants to create an unique Urban
+                                Jungle. Order your favorite plants!</p>
+                            <button class="hero__btn">SHOP NOW</button>
+                        </div>
+                        <div class="hero__right">
+                            <img src="./images/hero.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero__left">
+                            <p class="hero__text"> Welcome to GreenShop</p>
+                            <h1 class="hero__title">Let’s Make a Better <span>Planet</span></h1>
+                            <p class="hero__desc">We are an online plant shop offering a wide range of cheap and trendy
+                                plants.
+                                Use our plants to create an unique Urban
+                                Jungle. Order your favorite plants!</p>
+                            <button class="hero__btn">SHOP NOW</button>
+                        </div>
+                        <div class="hero__right">
+                            <img src="./images/hero.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- cards -->
+        <section class="Cards">
+            <div class="container">
+                <!-- categories -->
+                <ul class="Cards__categories">
+                </ul>
+                <!-- loading -->
+                <div class="loading">
+                    <div class="loading__item">
+                        <div class="loading__img"></div>
+                        <div class="loading__info">
+                            <div class="loading__title"></div>
+                            <div class="loading__title"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- products -->
+                <div class="cards">
+                </div>
+
+                <div class="cards__more-btn">
+                    <button class="more-btn">See more</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- moadal -->
+        <section class="modal">
+            <!-- login -->
+            <div class="login">
+                <div class="cancel-box">
+                    <button class="login-cancel-btn">
+                        <img src="./images/x.svg" alt="img">
+                    </button>
+                </div>
+                <div class="login__title">
+                    <button class="login-hover-btn ">Login</button> |
+                    <button class="register-hover-btn register-btn2">Register</button>
+                </div>
+                <form class="form">
+                    <p class="login__desc">Enter your username and password to login.</p>
+
+                    <input value="atuny0" class="input__username" type="text">
+                    <input value="9uQFF1Lh" class="input__password" type="password">
+                    <a class="login__forgot" href="#">Forgot Password?</a>
+                    <button class="login__btn">Login</button>
+                </form>
+            </div>
+            <!-- register -->
+            <div class="register">
+                <div class="cancel-box">
+                    <button class="register-cancel-btn">
+                        <img src="./images/x.svg" alt="img">
+                    </button>
+                </div>
+                <div class="login__title">
+                    <button class="login-hover-btn login-btn">Login</button> |
+                    <button class="register-hover-btn register-btn">Register</button>
+                </div>
+                <form class="register-form">
+
+                    <p class="login__desc">Enter your username and password to login.</p>
+
+                    <input class="input__username" type="text" placeholder="Enter your username">
+                    <input class="input__password" type="password" placeholder="Enter your password">
+                    <input class="input__email" type="email" placeholder="Enter your email">
+                    <a class="login__forgot" href="#">Forgot Password?</a>
+                    <button class="login__btn">Register</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="./images/logo.svg" alt="img" />
+                </div>
+                <div class="footer__address">
+                    <img src="./images/Location.svg" alt="img">
+                    <p class="footer__top-desc">
+                        70 West Buckingham Ave. <br />
+                        Farmingdale, NY 11735
+                    </p>
+                </div>
+                <div class="footer__email">
+                    <img src="./images/Message.svg" alt="img">
+                    <p class="footer__top-desc">contact@greenshop.com</p>
+                </div>
+                <div class="df footer__phone">
+                    <img src="./images/Calling.svg" alt="img">
+                    <p class="footer__top-desc">+88 01911 717 490</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__column">
+                    <h3 class="footer__column-title">My Account</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#"> My Account </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Our stores </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Contact Us </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Career </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Specials </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Help & Guide</h3>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#"> Help Center </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> How to Buy </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Shipping & Delivery </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Product Policy </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> How to Return </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Categories</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#"> House Plants </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Potter Plants </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Seeds </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Small Plants </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#"> Accessories </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h3 class="footer__links__title">Social Media</h3>
+                    <div class="footer__links__icons">
+                        <a class="footer__links__icon" href="#"><img src="./images/Facebook (2).svg" alt="img" /></a>
+                        <a class="footer__links__icon" href="#"><img src="./images/Instagram (2).svg" alt="img" /></a>
+                        <a class="footer__links__icon" href="#"><img src="./images/Twitter (2).svg" alt="img" /></a>
+                        <a class="footer__links__icon" href="#"><img src="./images/Linkedin (1).svg" alt="img" /></a>
+                        <a class="footer__links__icon" href="#"><img src="./images/Union.svg" alt="img" /></a>
+                    </div>
+                    <h3 class="footer__links__title">We accept</h3>
+                    <img src="./images/image 16.svg" alt="img" />
+                </div>
+            </div>
+            <div class="footer__desc">
+                © 2021 GreenShop. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="background"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
